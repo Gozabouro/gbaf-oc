@@ -8,7 +8,17 @@
     <body>
             <nav>
                 <div>
-                    <img src="/Images/logo.png" alt="Groupement Banque-Assurance Français">
+                    <img src="Images/logo.png" alt="Groupement Banque-Assurance Français">
                 </div>
-                <div id="user"></div>
+                <div id="user">
+                    <div>
+                        Utilisateur Test
+                    </div>
+                    <div>
+                        <a href="/user">Paramètres du compte</a>
+                    </div>
+                    <div>
+                        <a href="/logout">Déconnexion</a>
+                    </div>
+                </div>
             </nav>
