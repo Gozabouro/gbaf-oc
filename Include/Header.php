@@ -8,17 +8,17 @@
     <body>
             <nav>
                 <div>
-                    <img src="Images/logo.png" alt="Groupement Banque-Assurance Français">
+                    <a href="./User.php"> <img src="Images/logo.png" alt="Groupement Banque-Assurance Français"></a>
                 </div>
-                <div id="user">
+                <div id="profile">
                     <div>
                         Utilisateur Test
                     </div>
                     <div>
-                        <a href="/user">Paramètres du compte</a>
+                        <a href="/User.php?page=account">Paramètres du compte</a>
                     </div>
                     <div>
-                        <a href="/logout">Déconnexion</a>
+                        <a href="./User.php">Déconnexion</a>
                     </div>
                 </div>
             </nav>
