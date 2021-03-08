@@ -7,7 +7,7 @@ include "Include/Header.php";
             <main>
                 <div id="user">
         <h1>Connexion</h1>
-                <form action="/login" method="post">
+                <form action="Index.php" method="post">
                     <div>
                         <label for="username">Identifiant</label>
                         <input type="text" name="username" id="username" required>
@@ -29,7 +29,7 @@ include "Include/Header.php";
         ?>
         <h1>Inscription</h1>
         <form action="User.php?page=signup" method="post">
-            <fieldset class="signup">
+            <fieldset class="tab">
                 <div>
                     <label for="lastname">Nom</label>
                     <input type="text" name="lastname" id="lastname" required>
@@ -87,7 +87,52 @@ include "Include/Header.php";
             </div>
         </form>
 
+        <?php
+    }
+    if ($page=="Account")
+    {
 
+        ?>
+            <h1>Profil</h1>
+        <form action="User.php?page=Account" method="post">
+            <fieldset class="tab">
+                <div>
+                    <label for="lastname">Nom</label>
+                    <input type="text" name="lastname" id="lastname" value="PROFIL">
+                </div>
+                <div>
+                    <label for="firstname">Prénom</label>
+                    <input type="text" name="firstname" id="firstname" value="Test">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="new-password">Nouveau mot de passe</label>
+                    <input type="password" name="new-password" id="new-password">
+                </div>
+                <div>
+                    <label for="new-password-confirm">Confirmer le nouveau mot de passe</label>
+                    <input type="password" name="new-password-confirm" id="new-password-confirm">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="question">Question secrète</label>
+                    <input type="text" name="question" id="question" value="Test ?">
+                 </div>
+                <div>
+                    <label for="answer">Réponse</label>
+                    <input type="text" name="answer" id="answer" value="test">
+                </div>
+            </fieldset>
+                 <div>
+                    <label for="password"><strong>Mot de passe</strong> <small>(<em>Obligatoire</em>)</small></label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+            <div>
+                <input type="submit" value="Enregistrer">
+            </div>
+        </form>
         <?php
         if (empty($username) && empty($answer))
         {
@@ -104,6 +149,8 @@ include "Include/Header.php";
 
     }
     ?>
+
+
             </div>
         </main>
     <?php

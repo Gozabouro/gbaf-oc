@@ -20,10 +20,12 @@ include "Include/Header.php";
         C'est aussi un
         interlocuteur privilégié des pouvoirs publics.
     </p>
+        <div>
     <figure>
-        <img class="displayed" src="Images/groupe-bancaire.jpg" alt="Groupement Banque-Assurance Français" width="1000" height="400">
+        <img class="imgindex" src="Images/groupe-bancaire.jpg" alt="Groupement Banque-Assurance Français" width="1000" height="400">
     </figure>
-        <section class="partner">
+        </div>
+        <section class="partners">
             <h2>Acteurs et Partenaires</h2>
         <p>Ci-contre la liste des différents partenaires répertoriés :</p>
         <article class="partner">
@@ -38,6 +40,7 @@ include "Include/Header.php";
             <p>
                 <a href="/partner1">Afficher la suite</a> <!--Ajouter fonction partner1 pour renvoyer page-->
             </p>
+
         </article>
         <article class="partner">
             <figure>

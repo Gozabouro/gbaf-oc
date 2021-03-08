@@ -3,22 +3,22 @@
         <head>
             <meta charset="UTF-8">
             <title>Groupement Banque-Assurance Français</title>
-            <link rel="stylesheet" href="/CSS/style.css">
+            <link rel="stylesheet" href="CSS/style.css">
         </head>
-    <body>
-            <nav>
+
+
+       <body>
+        <nav>
+            <a href="./User.php"> <img src="Images/logo.png" class="logo" alt="Groupement Banque-Assurance Français"></a>
+            <div id="profile">
                 <div>
-                    <a href="./User.php"> <img src="Images/logo.png" alt="Groupement Banque-Assurance Français"></a>
+                    Profil Test
                 </div>
-                <div id="profile">
-                    <div>
-                        Utilisateur Test
-                    </div>
-                    <div>
-                        <a href="/User.php?page=account">Paramètres du compte</a>
-                    </div>
-                    <div>
-                        <a href="./User.php">Déconnexion</a>
-                    </div>
+                <div class="compte">
+                    <a href="User.php?page=Account">Paramètres du compte</a>
                 </div>
-            </nav>
+                <div>
+                    <a href="./User.php">Déconnexion</a>
+                </div>
+            </div>
+        </nav>
